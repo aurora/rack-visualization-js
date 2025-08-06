@@ -4,8 +4,29 @@ A JavaScript/TypeScript library for parsing and rendering server rack diagrams f
 
 ## Installation
 
+### From GitHub Packages
+
 ```bash
-npm install rack-visualization-js
+# Configure npm to use GitHub Packages for @aurora scope
+echo "@aurora:registry=https://npm.pkg.github.com" >> ~/.npmrc
+
+# Install the package
+npm install @aurora/rack-visualization-js
+```
+
+### Authentication
+
+To install from GitHub Packages, you need to authenticate with a GitHub personal access token:
+
+1. Create a personal access token with `read:packages` permission
+2. Add it to your `.npmrc` file:
+   ```
+   //npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
+   ```
+
+Or authenticate via npm login:
+```bash
+npm login --scope=@aurora --registry=https://npm.pkg.github.com
 ```
 
 ## Usage
@@ -13,7 +34,7 @@ npm install rack-visualization-js
 ### Simple Usage
 
 ```typescript
-import { RackVisualization } from 'rack-visualization-js';
+import { RackVisualization } from '@aurora/rack-visualization-js';
 
 const rackViz = new RackVisualization();
 
@@ -51,7 +72,7 @@ import {
   TextMarkupParser, 
   SvgGenerator, 
   RackSet 
-} from 'rack-visualization-js';
+} from '@aurora/rack-visualization-js';
 
 // Use separate parser
 const rackSet: RackSet = RackMLParser.parseRackML(rackmlContent);
