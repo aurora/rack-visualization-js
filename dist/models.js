@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.DeviceType = void 0;
+var DeviceType;
+(function (DeviceType) {
+    DeviceType["Server"] = "server";
+    DeviceType["Switch"] = "switch";
+    DeviceType["Firewall"] = "firewall";
+    DeviceType["Router"] = "router";
+    DeviceType["Cables"] = "cables";
+    DeviceType["Patch"] = "patch";
+    DeviceType["PDU"] = "pdu";
+    DeviceType["UPS"] = "ups";
+    DeviceType["Storage"] = "storage";
+    DeviceType["Tape"] = "tape";
+    DeviceType["Monitor"] = "monitor";
+    DeviceType["Keyboard"] = "keyboard";
+    DeviceType["KVM"] = "kvm";
+    DeviceType["Blank"] = "blank";
+    DeviceType["Gap"] = "gap";
+})(DeviceType = exports.DeviceType || (exports.DeviceType = {}));

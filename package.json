@@ -1,0 +1,36 @@
+{
+  "name": "rack-visualization-js",
+  "version": "1.0.0",
+  "description": "A JavaScript library for parsing and rendering server rack diagrams from RackML XML or text markup",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rack",
+    "visualization",
+    "diagram",
+    "server",
+    "svg",
+    "rackml",
+    "markup"
+  ],
+  "author": "Harald Lapp",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aurora/rack-visualization-js"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "typescript": "^4.7.4"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ]
+}
