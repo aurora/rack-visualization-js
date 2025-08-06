@@ -1,6 +1,9 @@
+![AI Generated](https://img.shields.io/badge/AI%20Generated-Yes-blue)
+> Model: Claude Sonnet-4 (2025-05-14) via Roo
+
 # Rack Visualization JS
 
-A JavaScript/TypeScript library for parsing and rendering server rack diagrams from RackML XML or text markup.
+A JavaScript/TypeScript library for parsing and rendering server rack diagrams from RackML XML or text markup. Created with Roo and 
 
 ## Installation
 
